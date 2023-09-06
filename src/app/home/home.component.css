@@ -1,0 +1,40 @@
+body{
+    background-color: lightgrey;
+    width: 50%;
+    height: 20%;
+    padding: 2%;
+    border: 20px solid rgb(128, 0, 0);
+    margin: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+
+.Contacto-H{
+
+    background-color: lightgrey;
+    width: 300px;
+    padding: 25px;
+    border: 15px solid rgb(0, 128, 30);
+    margin: 25px;
+    text-align: center;
+ 
+}
+.torneos{
+    background-color: lightgrey;
+    width: 300px;
+    padding: 25px;
+    border: 15px solid rgb(0, 90, 128);
+    margin: 25px;
+    text-align: center;
+
+}
+.news{
+    background-color: lightgrey;
+    width: 300px;
+    padding: 25px;
+    border: 25px solid rgb(98, 8, 201);
+    margin: 25px;
+    text-align: center;
+
+}

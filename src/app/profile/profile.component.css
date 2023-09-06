@@ -1,0 +1,10 @@
+body{
+    background-color: lightgrey;
+    width: 50%;
+    height: 20%;
+    padding: 2%;
+    border: 20px solid rgb(128, 0, 0);
+    margin: 10%;
+    align-items: center;
+    text-align: center;
+}
