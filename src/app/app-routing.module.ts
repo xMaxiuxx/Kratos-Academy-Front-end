@@ -17,8 +17,9 @@ const routes: Routes = [
   { path: 'teacher', component: TeacherComponent },
   { path: 'edit', component: EditProfileComponent },
   { path: 'create', component: ProfileComponent },
-
   { path: '**', component: UserNotFoundComponent },
+
+
 
 
 
