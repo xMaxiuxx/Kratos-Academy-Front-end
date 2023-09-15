@@ -6,14 +6,16 @@
 <body>
 <div>
     <label for="text">Usuario: </label>
-    <input type="text" name="Usuario" placeholder="ingrese usuario"><br>
+    <input type="text" name="Usuario" placeholder="ingrese usuario" [(ngModel)]="usuario"> <br>
     <label for="Password">Contraseña: </label>
-    <input type="password" name="contraseña" placeholder="ingrese contraseña"><br>
+    <input type="password" name="contrasena" placeholder="ingrese contraseña" [(ngModel)]="contrasena"><br>
 
-    <button>LOGIN</button> 
-    <button routerLink= "/student">ATLETA</button>
-    <button routerLink= "/teacher">PROFESOR</button>
+    <button (click)="sendData()">LOGIN</button> 
+    <!-- <button routerLink= "/student">ATLETA</button>
+    <button routerLink= "/teacher">PROFESOR</button> 
+[(ngModel)]="usuario">-->
 </div>
 
 </body>
 </html>
+
