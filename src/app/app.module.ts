@@ -11,6 +11,7 @@ import { UserNotFoundComponent } from './user-not-found/user-not-found.component
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,13 +22,15 @@ import { FormsModule } from '@angular/forms';
     TeacherComponent,
     UserNotFoundComponent,
     EditProfileComponent,
-    ProfileComponent
+    ProfileComponent,
+
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule
 
 
   ],

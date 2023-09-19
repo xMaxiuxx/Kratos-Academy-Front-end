@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LoginService } from '../login.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,19 +8,24 @@ import { LoginService } from '../login.service';
 })
 export class LoginComponent {
 
-  usuario: string = '';
-  contrasena: string = '';
-constructor (private loginService: LoginService){ }
+  nickname: string = '';
+  password: string = '';
+constructor (private loginService: LoginService,private router: Router){ }
 
 sendData():void{
   const dataToSend = {
-    user: this.usuario,
-    password: this.contrasena
+    nickname: this.nickname,
+    password: this.password
   }
 
-    this.loginService.postData(dataToSend).subscribe((response)=>{
-      console.log(response);
-    })
+    this.loginService.postData(dataToSend).subscribe((user)=>{
+
+      if (user && user.role === "profe"){
+        this.router.navigate(['/teacher']);
+      }else{
+        this.router.navigate(['/student']);
+      }
+    });
   
 }
 

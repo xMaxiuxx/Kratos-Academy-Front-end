@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'edit', component: EditProfileComponent },
   { path: 'create', component: ProfileComponent },
   { path: '**', component: UserNotFoundComponent },
-
+  { path: 'student/:userId', component:  StudentComponent},
 
 
 

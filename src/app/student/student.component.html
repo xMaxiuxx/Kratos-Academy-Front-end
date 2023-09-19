@@ -8,10 +8,12 @@
 <body>
     <div class="Foto_perfil">FOTO</div>
     <div class="perfil">
-        <h3>Perfil: MAXI</h3>
-        <p>cinturon</p>
-        <p>cuando empezaste</p>
-        <p>categoria</p>
+        <h3>Perfil: {{ user?.name }}</h3>
+        <p>Cinturón: {{ user?.cinturon }}</p>
+        <p>Fecha de inicio: {{ user?.fetch }}</p>
+        <p>Categoría: {{ user?.categoria }}</p>
+
+
         <button routerLink="/edit"> EDITAR PERFIL</button>
 
      </div>
@@ -20,7 +22,7 @@
             <p>Asistencias </p>
     </div>  
     
-    <div class="cuota">
+    <div class="cuota">s
             <p>Cuotas </p>
     </div>
 </body>
