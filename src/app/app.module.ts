@@ -4,25 +4,27 @@ import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
 import { StudentComponent } from './student/student.component';
-import { TeacherComponent } from './teacher/teacher.component';
 import { UserNotFoundComponent } from './user-not-found/user-not-found.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/users/register/register.component';
+import { LoginComponent } from './components/users/login/login.component';
+import { TeacherComponent } from './teacher/teacher.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent,
     StudentComponent,
     TeacherComponent,
     UserNotFoundComponent,
     EditProfileComponent,
     ProfileComponent,
+    RegisterComponent,
+    LoginComponent,
 
   ],
   imports: [
