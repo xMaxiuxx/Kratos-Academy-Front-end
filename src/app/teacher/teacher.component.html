@@ -8,10 +8,13 @@
 <body>
     <div class="Foto_perfil">FOTO</div>
     <div class="perfil">
-        <h3>Perfil: {{ user?.name }}</h3>
-        <p>Cinturón: {{ user?.cinturon }}</p>
-        <p>Fecha de inicio: {{ user?.fetch }}</p>
-        <p>Categoría: {{ user?.categoria }}</p>
+            <h3> {{ user?.nickname }}</h3>
+            <h2>{{user?.role}}    </h2>
+        <p>Cinturón: {{ user?.faixa }}</p>
+        <p>Edad: {{ user?.age }}</p>
+        <p>Peso: {{user?.weight }} Kgs</p>
+        <p>Fecha de Nacimiento: {{ user?.date }}</p>
+        
         <button routerLink="/edit"> EDITAR PERFIL</button>
      </div>
   <button>alumnos</button>
