@@ -1,8 +1,8 @@
 body{
-    background-color: lightgrey;
+    background-color: rgb(7, 6, 6);
     width: 50%;
     height: 20%;
-    padding: 2%;
+    padding: 1%;
     border: 20px solid rgb(128, 0, 0);
     margin: 10%;
     align-items: center;
@@ -32,9 +32,12 @@ body{
 .news{
     background-color: lightgrey;
     width: 300px;
-    padding: 25px;
+    padding: 20px;
     border: 25px solid rgb(98, 8, 201);
     margin: 25px;
     text-align: center;
 
+}
+h2{
+    color: white;
 }

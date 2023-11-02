@@ -13,6 +13,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/users/register/register.component';
 import { LoginComponent } from './components/users/login/login.component';
 import { TeacherComponent } from './teacher/teacher.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { TeacherComponent } from './teacher/teacher.component';
     ProfileComponent,
     RegisterComponent,
     LoginComponent,
+    FooterComponent,
+    HeaderComponent,
 
   ],
   imports: [
